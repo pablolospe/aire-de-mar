@@ -10,15 +10,15 @@ export const metadata: Metadata = {
   title: "Aire de Mar - Boutique Studio",
   description: "Estudio de arquitectura boutique - Portfolio minimalista",
   generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/favicon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+  // icons: {
+  //   icon: [
+  //     {
+  //       url: "/favicon.ico",
+  //       type: "image/svg+xml",
+  //     },
+  //   ],
+  //   apple: "/apple-icon.png",
+  // },
 }
 
 export default function RootLayout({
