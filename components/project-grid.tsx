@@ -171,9 +171,9 @@ export function ProjectGrid() {
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 auto-rows-[180px]">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <Link
-            key={project.id}
+            key={index}
             href={`/proyecto/${project.slug}`}
             className={`group ${getSizeClasses(project.size)}`}
             style={{

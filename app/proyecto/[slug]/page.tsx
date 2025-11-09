@@ -174,7 +174,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         {/* Project Images */}
         <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
           {project.images.map((image, index) => (
-            <div key={index} className="relative aspect-[3/2] w-full overflow-hidden bg-muted">
+            <div key={`${project.title}-${index}`} className="relative aspect-[3/2] w-full overflow-hidden bg-muted">
               <Image
                 src={image || "/placeholder.svg"}
                 alt={`${project.title} - Imagen ${index + 1}`}
