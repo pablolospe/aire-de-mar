@@ -128,8 +128,9 @@ const projectData: Record<
   },
 }
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = projectData[params.slug]
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const project = projectData[slug]
 
   if (!project) {
     return <div>Proyecto no encontrado</div>
