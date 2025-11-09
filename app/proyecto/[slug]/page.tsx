@@ -128,7 +128,7 @@ const projectData: Record<
   },
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default async function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projectData[params.slug]
 
   if (!project) {
