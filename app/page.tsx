@@ -57,24 +57,33 @@ export default function Home() {
           <h2 className="text-3xl font-light tracking-tight mb-12">Contacto</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
-              <p className="text-sm text-muted-foreground mb-2">Email</p>
+              <p className="text-sm text-muted-foreground mb-2">Instagram</p>
               <a
-                href="mailto:hola@arquitectura.com"
+                href="https://www.instagram.com/airedemarstudio"
                 className="text-foreground hover:text-muted-foreground transition-colors"
               >
-                hola@arquitectura.com
+                @airedemarstudio
+              </a>
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground mb-2">Email</p>
+              <a
+                href="mailto:info@airedemarstudio.com"
+                className="text-foreground hover:text-muted-foreground transition-colors"
+              >
+                info@airedemarstudio.com
               </a>
             </div>
             <div>
               <p className="text-sm text-muted-foreground mb-2">Teléfono</p>
               <a href="tel:+541112345678" className="text-foreground hover:text-muted-foreground transition-colors">
-                +54 11 1234 5678
+                +598 94 017 151
               </a>
             </div>
-            <div>
+            {/* <div>
               <p className="text-sm text-muted-foreground mb-2">Ubicación</p>
-              <p className="text-foreground">Buenos Aires, Argentina</p>
-            </div>
+              <p className="text-foreground">Punta del Este, Uruguay</p>
+            </div> */}
           </div>
         </div>
       </section>
