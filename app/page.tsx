@@ -24,7 +24,7 @@ export default function Home() {
       </section>
 
       {/* Information Section */}
-      <section id="informacion" className="py-24 px-6 lg:px-12 border-t border-border">
+      <section id="estudio" className="py-24 px-6 lg:px-12 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
             <div>
