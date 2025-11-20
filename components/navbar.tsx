@@ -20,27 +20,28 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/95 backdrop-blur-sm border-b border-border" : "bg-transparent"
+        scrolled ? "bg-[#040273]/75 backdrop-blur-sm border-b border-[#040273]/65" : "bg-[#040273]/95"
+        // scrolled ? "bg-background/95 backdrop-blur-sm border-b border-border" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-24">
           <Link href="/" className="flex items-center">
-            <Image
+            {/* <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-11-08%20at%208.01.41%E2%80%AFPM-KKJJseTZbFitEwAsNQUV6520H5XeIo.png"
               alt="Aire de Mar"
               width={160}
               height={100}
               className="h-20 w-auto"
               priority
-            />
+            /> */}
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-12">
             <Link
               href="/#proyectos"
-              className="text-sm tracking-wider font-light text-muted-foreground hover:text-foreground transition-colors"
+              className="text-lg tracking-wider font-bold text-white/90 hover:text-white/70 transition-colors"
             >
               Proyectos
             </Link>

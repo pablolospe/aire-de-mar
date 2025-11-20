@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { ProjectGrid } from "@/components/project-grid"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -7,11 +8,19 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-balance text-foreground mb-8">
-            Diseño arquitectónico contemporáneo
-          </h1>
+      <section className="flex pt-32 pb-20 px-6 lg:px-12">
+        <div className="flex justify-center items-center max-w-7xl mx-auto">
+          {/* <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-balance text-foreground mb-8">
+            Aire de mar
+          </h1> */}
+           <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-11-08%20at%208.01.41%E2%80%AFPM-KKJJseTZbFitEwAsNQUV6520H5XeIo.png"
+              alt="Aire de Mar"
+              width={1600}
+              height={1000}
+              className="h-80 w-auto"
+              priority
+            />
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl tracking-wide leading-relaxed">
             Creando espacios que conectan forma, función y contexto con sensibilidad minimalista.
           </p>
