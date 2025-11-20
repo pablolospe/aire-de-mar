@@ -9,7 +9,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="flex pt-32 pb-20 px-6 lg:px-12">
-        <div className="flex justify-center items-center max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center max-w-7xl mx-auto">
           {/* <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-balance text-foreground mb-8">
             Aire de mar
           </h1> */}
